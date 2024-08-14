@@ -1,0 +1,72 @@
+.taskContainer {
+    display: flex;
+    border: 1px solid var(--gray-400);
+    background-color: var(--gray-500);
+    border-radius: 0.5rem;
+    width: 46rem;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1.2rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+
+}
+
+.unCheckedButton {
+    border: solid 3px var(--blue);
+    border-radius: 50%;
+    padding: 0.5rem;
+    max-height: 0.5rem;
+    margin-right: 1rem;
+    background-color: var(--gray-500);
+}
+.unCheckedButton:hover{
+    background-color: var(--blue-dark);
+    opacity: 0.6;
+}
+.checkedButton{
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+    padding: 2px;
+    margin-right: 1rem;
+    background-color: var(--purple-dark);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.checkedButton{
+    background-color: var(--purple);
+    color: var(--gray-100);
+}
+.taskContainer button:hover{
+    cursor: pointer;
+}
+.Content {
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    
+}
+.checkedContent{
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    font-size: 0.875rem;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+.Check-icon{
+    
+}
+.taskContainer > svg {
+    color: var(--gray-300);
+    margin-left: 2rem;
+}
+.taskContainer > svg:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+    outline: solid 6px var(--gray-400);
+    border-radius: 2px;
+    cursor: pointer;
+}
