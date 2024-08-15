@@ -36,6 +36,37 @@
     line-height: 140%;
     font-size: 1rem;
 }
+@media (max-width: 600px) {
+    .Taskbar {
+      width: 90%; /* Ajusta a largura para caber em telas menores */
+      margin: 2rem auto; /* Ajusta a margem para dispositivos móveis */
+    }
+    .Taskbarcontainer button{
+        background: var(--blue-dark);
+    color: var(--gray-100);
+    width: 5.62rem;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    font-weight: bold;
+    font-size: 0.875rem;
+    height: 4rem;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    }
+    .Taskbarcontainer {
+        display:  flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: calc( 0px - 1.8rem );
+    }
+}
 .Taskbar:focus{
     border: solid 1px var(--purple-dark);
     outline: none;

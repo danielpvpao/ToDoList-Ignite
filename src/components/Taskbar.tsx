@@ -16,11 +16,12 @@ function Taskbar({ onCreateNewTask }: TaskbarProps) {
     onCreateNewTask(newTaskContent); 
     setNewTaskContent('')
   }; 
-  
+
+const isNewTaskContentEmpty = newTaskContent.length === 0;
   return (
     <div className={styles.Taskbarcontainer}>
       <input placeholder='Adicione uma nova tarefa' className={styles.Taskbar} type="text" onChange={handleInputChange} value={newTaskContent}/>
-      <button type='button' onClick={handleButtonClick} > 
+      <button type='button' disabled={isNewTaskContentEmpty} onClick={handleButtonClick} > 
         Criar <PlusCircle />
       </button>
     </div>
