@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styles from './TaskList.module.css';
 import Task from './Task';
 import Taskbar from './Taskbar';
-import { Key } from 'phosphor-react';
 import EmptyTaskList from './EmptyTaskList';
 
 const TaskProps = [
