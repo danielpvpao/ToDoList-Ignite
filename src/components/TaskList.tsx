@@ -35,9 +35,13 @@ function TaskList() {
     const tasksWithoutDeletedOne = tasks.filter(task => {
       return task.id !== taskToDelete
     })
-    const newCompletedCount = tasksWithoutDeletedOne.filter(task => task).length;
+    
     setTasks(tasksWithoutDeletedOne)
-    setCompletedCount(newCompletedCount)
+   
+    const isDeletedTaskCompleted = completedCount > tasksWithoutDeletedOne.length;
+    if (isDeletedTaskCompleted) {
+      setCompletedCount(completedCount - 1);
+    }
   }
   return (
     
