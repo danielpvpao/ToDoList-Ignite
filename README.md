@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# To Do List ✅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(![chrome-capture-2025-1-8 (6)](https://github.com/user-attachments/assets/3eadfb07-dfa6-40e7-9fa9-f88937b8c5f6)
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **To Do List** é uma aplicação simples e intuitiva desenvolvida para ajudar os usuários a organizarem suas tarefas diárias. É possível adicionar, remover e marcar tarefas como concluídas, tudo em uma interface responsiva e otimizada para dispositivos móveis.
 
-## Expanding the ESLint configuration
+## Tecnologias utilizadas 🚀
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **[React](https://reactjs.org/):** Biblioteca para construção de interfaces de usuário.
+- **[TypeScript](https://www.typescriptlang.org/):** Superconjunto do JavaScript para tipagem estática.
+- **[Vite](https://vitejs.dev/):** Ferramenta de build rápida e moderna.
+- **[Module CSS](https://github.com/css-modules/css-modules):** Estilização modular para componentes.
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- ➕ **Adicionar tarefas:** Crie novas tarefas para organizar seu dia.
+- ❌ **Remover tarefas:** Exclua tarefas que não são mais necessárias.
+- ✔️ **Marcar como concluída:** Organize suas pendências marcando o que já foi feito.
+- 📱 **Responsividade:** Design otimizado para dispositivos móveis.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Como executar o projeto localmente 💻
+
+1. Clone o repositório:
+
+   ```bash
+   gh repo clone danielpvpao/ToDoList-Ignite
+
+Instale as dependências:
+
+npm install
+
+Inicie o servidor de desenvolvimento:
+
+npm run dev
